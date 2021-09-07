@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Lasagna",
+		"imageName": "lasagna",
+		"kitchen": "italian",
+		"description": "Classic Italian taste. Contains: Lasagna noodles, bolognese sauce"
+	},
+	{
+		"name": "Pizza",
+		"imageName": "pizza",
+		"kitchen": "italian",
+		"description": "Another classic Italian taste. Contains: Dough, Cheese, Tomato Sacue"	
+	},
+	{
+		"name": "Oragne Chicken",
+		"imageName": "orangechicken",
+		"kitchen": "chinese",
+		"description": "Classic Chinese taste. Friend chickens with the awesome orange sauce"	
+	},
+	{
+		"name": "Noodles",
+		"imageName": "noodles",
+		"kitchen": "chinese",
+		"description": "Another classic Chinese taste. Contains: Noodles and Vegetables"	
+	}
+]

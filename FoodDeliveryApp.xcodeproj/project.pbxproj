@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		410053C326E6F44B002EDD03 /* FoodDeliveryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410053C226E6F44B002EDD03 /* FoodDeliveryAppApp.swift */; };
-		410053C526E6F44B002EDD03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410053C426E6F44B002EDD03 /* ContentView.swift */; };
+		410053C526E6F44B002EDD03 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410053C426E6F44B002EDD03 /* FoodList.swift */; };
 		410053C726E6F44D002EDD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410053C626E6F44D002EDD03 /* Assets.xcassets */; };
 		410053CA26E6F44D002EDD03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410053C926E6F44D002EDD03 /* Preview Assets.xcassets */; };
+		410053D326E6F4C0002EDD03 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 410053D226E6F4C0002EDD03 /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		410053BF26E6F44B002EDD03 /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410053C226E6F44B002EDD03 /* FoodDeliveryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryAppApp.swift; sourceTree = "<group>"; };
-		410053C426E6F44B002EDD03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		410053C426E6F44B002EDD03 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		410053C626E6F44D002EDD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		410053C926E6F44D002EDD03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		410053CB26E6F44D002EDD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410053D226E6F4C0002EDD03 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,9 @@
 		410053C126E6F44B002EDD03 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				410053D126E6F481002EDD03 /* Content */,
 				410053C226E6F44B002EDD03 /* FoodDeliveryAppApp.swift */,
-				410053C426E6F44B002EDD03 /* ContentView.swift */,
+				410053C426E6F44B002EDD03 /* FoodList.swift */,
 				410053C626E6F44D002EDD03 /* Assets.xcassets */,
 				410053CB26E6F44D002EDD03 /* Info.plist */,
 				410053C826E6F44D002EDD03 /* Preview Content */,
@@ -67,6 +70,14 @@
 				410053C926E6F44D002EDD03 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		410053D126E6F481002EDD03 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				410053D226E6F4C0002EDD03 /* menu.json */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410053D326E6F4C0002EDD03 /* menu.json in Resources */,
 				410053CA26E6F44D002EDD03 /* Preview Assets.xcassets in Resources */,
 				410053C726E6F44D002EDD03 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410053C526E6F44B002EDD03 /* ContentView.swift in Sources */,
+				410053C526E6F44B002EDD03 /* FoodList.swift in Sources */,
 				410053C326E6F44B002EDD03 /* FoodDeliveryAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
