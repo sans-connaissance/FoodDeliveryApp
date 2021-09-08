@@ -16,11 +16,11 @@ struct Food: Hashable, Codable, Identifiable {
     var kitchen: Kitchen
     var description: String
     
+    
     enum Kitchen: String, CaseIterable, Codable, Hashable {
         
         case italian = "Italian"
         case chinese = "Chinese"
     }
-    
     
 }

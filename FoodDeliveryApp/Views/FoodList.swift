@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct FoodList: View {
+    var categories: [String: [Food]] {
+        .init(
+            grouping: Menu,
+            by: {$0.kitchen.rawValue}
+        )
+    }
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(categories.keys.sorted(), id: \String.self){ key in
+                FoodRowView(kitchenName: "\(key)", foods: categories[key]!)
+                    .frame(height: 350)
+                    .padding(.top)
+                    .padding(.bottom)
+            }.navigationBarTitle("Food Delivery")
+            
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        FoodList()
-    }
-}
