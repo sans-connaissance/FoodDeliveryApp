@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct FoodItemView: View {
+    
+    var food: Food
+    
+    
+    
     var body: some View {
         VStack(alignment:.leading) {
-            Image("lasagna")
+            Image(food.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 200)
@@ -18,10 +23,10 @@ struct FoodItemView: View {
                 .shadow(radius: 5)
             
             VStack(alignment: .leading) {
-                Text("Lasagna")
+                Text(food.name)
                     .font(.title)
                     .foregroundColor(.primary)
-                Text("Description")
+                Text(food.description)
                     .font(.subheadline)
                     .lineLimit(2)
                     .foregroundColor(.primary)
@@ -35,6 +40,6 @@ struct FoodItemView: View {
 
 struct FoodItemView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodItemView()
+        FoodItemView(food: Menu[0])
     }
 }
