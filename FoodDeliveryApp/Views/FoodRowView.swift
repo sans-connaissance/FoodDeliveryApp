@@ -23,7 +23,11 @@ struct FoodRowView: View {
                 
                 HStack {
                     ForEach(foods, id: \.id) { food in
-                        FoodItemView(food: food)
+                        
+                        NavigationLink(
+                            destination: FoodDetailView(food: food)){
+                            FoodItemView(food: food)
+                        }.buttonStyle(PlainButtonStyle())
                     }
                 }
             }
